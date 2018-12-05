@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap//dist/css/bootstrap.min.css"
+    />
+
+    <!-- date picker -->
+
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap-datepicker.css"
+    />
+    <script src="../js/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/botstrap-datepicker.js"></script>
+
+    <link rel="stylesheet" href="../css/new.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Information HUB</span>
+      <div>
+        <ul class="nav justify-content-end ">
+          <li class="nav-item ">
+            <a class="nav-link text-light active" href="../index.html"
+              >Sign in</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light border border-dark" href="#"
+              >Join now</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="full-body">
+      <div class="jumbotron bg-secondary reg-form" style="width: 560px;">
+        <div class="form-group row">
+          <label for="firstName" class="col-sm-2 col-form-label text-light p-2"
+            >first name</label
+          >
+          <div class="col-sm-4 ">
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="fist name"
+              required
+            />
+          </div>
+          <label for="lastName" class="col-sm-2 p-2 col-form-label text-light"
+            >last name</label
+          >
+          <div class="col-sm-4 ">
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="last name"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label text-light"
+            >Email</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="birthDay" class="col-sm-2 col-form-label text-light"
+            >Birhday</label
+          >
+          <div class="col-sm-10">
+            <div
+              class="input-group date"
+              id="birthDay"
+              data-provide="datepicker"
+            >
+              <input
+                type="text"
+                id="inputBirthDay"
+                class="form-control"
+                placeholder="mm/dd/yyyy"
+              />
+              <div class="input-group-addon">
+                <span class="input-group-text fas fa-calendar-alt"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="occupation" class="col-sm-2 p-1 col-form-label text-light"
+            >Occupation:</label
+          >
+          <div class="col-sm-10  ">
+            <input
+              type="text"
+              class="form-control"
+              id="occupation"
+              placeholder="Occupation"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="gender" class="col-sm-2 col-form-label text-light p-1"
+            >gender</label
+          >
+          <div class="col-sm-2 p-1 pl-3">
+            <div class="form-check">
+              <input
+                class="form-check-input "
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                checked
+              />
+              <label class="form-check-label text-light" for="gridRadios2">
+                Male
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-2 p-1">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+              />
+              <label class="form-check-label text-light" for="gridRadios2">
+                Female
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-2 p-1">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="others"
+                value="others"
+              />
+              <label class="form-check-label text-light" for="gridRadios2">
+                Others
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label
+            for="inputPassword"
+            class="col-sm-2 col-form-label text-light p-1"
+            >Password</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="password"
+              class="form-control"
+              id="inputPassword"
+              placeholder="Password"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="mx-auto">
+            <button type="button " class="btn btn-danger" id="btnRegSubmit">
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/reg.js"></script>
+    <!-- cofirm -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+  </body>
+</html>
